@@ -469,37 +469,47 @@ summary:focus-visible {
 }
 
 /* =========================================================
-   Proof
+   About (replaces former Proof block — first-person founder note)
    ========================================================= */
 
-.proof {
-  padding-block: var(--space-7);
-  background: var(--navy);
-  color: var(--white);
+.about {
+  padding-block: var(--space-6);
+  background: var(--bg);
 }
 
-.proof-quote {
-  max-width: var(--container-narrow);
+.about-body {
+  max-width: 38rem;
   margin: 0 auto;
-  text-align: center;
-  padding: 0 var(--space-3);
 }
 
-.proof-quote p {
+.about-lead {
   font-family: var(--font-display);
-  font-size: clamp(var(--text-xl), 3.2vw, var(--text-2xl));
-  font-weight: 500;
-  line-height: 1.45;
+  font-size: clamp(var(--text-lg), 2.4vw, var(--text-xl));
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 var(--space-2);
   letter-spacing: -0.01em;
-  color: var(--white);
-  margin: 0 0 var(--space-3);
 }
 
-.proof-attrib {
-  font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: 0.02em;
-  font-style: normal;
+.about-body p {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0 0 var(--space-2);
+}
+
+.about-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Anchor sentence after the 3 problem cards */
+.problem-anchor {
+  max-width: 42rem;
+  margin: var(--space-4) auto 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--text-base);
+  line-height: 1.6;
 }
 
 /* =========================================================
@@ -602,30 +612,6 @@ summary:focus-visible {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--space-4);
-}
-
-.tier-feature {
-  background: var(--white);
-  border: 2px solid var(--emerald);
-  box-shadow: var(--shadow-md);
-  position: relative;
-}
-
-.tier-feature::before {
-  content: "Most chosen";
-  position: absolute;
-  top: -0.7rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--emerald-text);
-  color: var(--white);
-  font-family: var(--font-display);
-  font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.3rem 0.8rem;
-  border-radius: 999px;
 }
 
 .tier-eyebrow {
