@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Northbound Signal</title>
+  <rect width="64" height="64" rx="12" fill="#0A2540"/>
+  <path d="M32 12 L42 36 L32 30 L22 36 Z" fill="#0E9F6E"/>
+  <path d="M32 30 L42 36 L32 52 L22 36 Z" fill="#FAFAF9" opacity="0.92"/>
+</svg>
